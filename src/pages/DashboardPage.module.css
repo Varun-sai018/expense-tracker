@@ -1,0 +1,309 @@
+.dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+.header {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.headerLeft h1 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin: 0;
+  font-weight: 700;
+}
+
+.dateTime {
+  color: #64748b;
+  margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
+}
+
+.headerActions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.addButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+.addButton.primary {
+  background: #3b82f6;
+}
+
+.addButton.success {
+  background: #10b981;
+}
+
+.addButton.info {
+  background: #6366f1;
+}
+
+.addButton.warning {
+  background: #f59e0b;
+}
+
+.addButton.secondary {
+  background: #64748b;
+}
+
+.addButton.danger {
+  background: #ef4444;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+}
+
+.statHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.statIcon {
+  font-size: 1.5rem;
+}
+
+.statLabel {
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.statValue {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.trendIndicator {
+  margin-left: auto;
+  font-size: 1.25rem;
+}
+
+.trendIndicator.up {
+  color: #10b981;
+}
+
+.trendIndicator.down {
+  color: #ef4444;
+}
+
+.trendIndicator.neutral {
+  color: #f59e0b;
+}
+
+.chartsSection {
+  margin-bottom: 2rem;
+}
+
+.chartCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chartCard h3 {
+  color: #1e293b;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.25rem;
+}
+
+.walletsSection {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.walletsSection h2 {
+  color: #1e293b;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  background: #f8fafc;
+  border-radius: 0.75rem;
+}
+
+.emptyStateImage {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1.5rem;
+  opacity: 0.7;
+}
+
+.emptyState p {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.walletsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.walletCard {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s;
+}
+
+.walletCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.walletHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.walletIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.walletHeader h3 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.walletDetails {
+  margin-bottom: 1.5rem;
+}
+
+.walletDetails p {
+  color: #64748b;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.balance {
+  font-weight: 600;
+  color: #1e293b !important;
+  font-size: 1.1rem !important;
+  margin-top: 1rem !important;
+}
+
+.walletActions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.actionButton {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: white;
+}
+
+.actionButton.primary {
+  background: #3b82f6;
+}
+
+.actionButton.danger {
+  background: #ef4444;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 1rem;
+  }
+
+  .headerContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headerActions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .addButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .walletsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statCard {
+    padding: 1rem;
+  }
+
+  .statValue {
+    font-size: 1.5rem;
+  }
+} 

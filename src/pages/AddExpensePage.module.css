@@ -1,0 +1,185 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: var(--neutral-100);
+  padding: var(--space-4);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: var(--space-8);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.header h1 {
+  font-size: var(--font-2xl);
+  color: var(--neutral-900);
+  margin-bottom: var(--space-3);
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--neutral-500);
+  font-size: var(--font-medium);
+}
+
+.form {
+  background: white;
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--space-8);
+}
+
+.formRow {
+  display: flex;
+  gap: var(--space-6);
+}
+
+@media (max-width: 640px) {
+  .formRow {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .container {
+    padding-top: var(--space-4);
+  }
+
+  .form {
+    padding: var(--space-4);
+  }
+}
+
+.formGroup {
+  flex: 1;
+  min-width: 0;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: var(--space-2);
+  color: var(--neutral-700);
+  font-weight: 500;
+  font-size: var(--font-small);
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-md);
+  font-size: var(--font-base);
+  color: var(--neutral-800);
+  background: var(--neutral-50);
+  transition: var(--transition-base);
+}
+
+.input:hover,
+.select:hover,
+.textarea:hover {
+  border-color: var(--primary-400);
+  background: white;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 3px var(--primary-100);
+  background: white;
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.fileInput {
+  border: 2px dashed var(--neutral-200);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  background: var(--neutral-50);
+  transition: var(--transition-base);
+}
+
+.fileInput:hover {
+  border-color: var(--primary-400);
+  background: white;
+}
+
+.fileInputField {
+  width: 100%;
+  cursor: pointer;
+}
+
+.fileHelp {
+  margin-top: var(--space-4);
+  color: var(--neutral-500);
+  font-size: var(--font-small);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--neutral-200);
+}
+
+.button {
+  padding: var(--space-3) var(--space-8);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--font-base);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.button.primary {
+  background: var(--primary-500);
+  color: white;
+}
+
+.button.primary:hover {
+  background: var(--primary-600);
+}
+
+.button.secondary {
+  background: var(--neutral-100);
+  color: var(--neutral-600);
+}
+
+.button.secondary:hover {
+  background: var(--neutral-200);
+}
+
+.toast {
+  position: fixed;
+  top: var(--space-8);
+  right: var(--space-8);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-md);
+  color: white;
+  font-weight: 500;
+  z-index: 1000;
+  box-shadow: var(--shadow-lg);
+}
+
+.toast.success {
+  background: var(--success-500);
+}
+
+.toast.error {
+  background: var(--error-500);
+} 
