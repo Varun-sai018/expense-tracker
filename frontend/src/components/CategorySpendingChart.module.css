@@ -1,0 +1,20 @@
+.chartContainer {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  height: 400px;
+}
+
+.chartTitle {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .chartContainer {
+    height: 300px;
+  }
+} 
